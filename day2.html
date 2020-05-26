@@ -11,8 +11,25 @@
 <body>
 
 
-    <script type="text/javascript" src="Basic.js">
+    <script>
+    	var temperature = (Math.random() * 40) - 5
+        if (temperature > 20) {
+            document.write("The weather is hot <br>")
+            document.write('<img src=summer.jpg>')
+            document.style.backgroundColor = '#99C262';
+        } else if (temperature > 10) {
+            document.write("The weather is moderate <br>")
+            document.write('<img src=rainy.jpg>')
+        } else {
+            document.write("The weather is cold <br>")
+            document.write('<img src=winter.jpg>')
+        }
+    	
     </script>
+
+    <script type="text/javascript" src="Basic.js"></script>
+    <script type="text/javascript" src="Intermediate/intermediate.js"></script>
+
 </body>
 
 </html>
